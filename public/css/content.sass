@@ -1,0 +1,177 @@
+*
+  box-sizing: content-box
+  outline: none
+  font-family: 'Roboto', sans-serif
+
+body
+  margin: 0
+  padding: 0
+  background: $citylights
+.container
+  margin: 0 auto
+  padding: 0
+  width: 100%
+.header
+  width: 100%
+  height: fit-content
+  position: sticky
+  top: 0
+  background: $draculaorchid
+  animation: fade-in .2s
+  color: $citylights
+  &__nav
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+  &__logo
+    width: 90px
+    height: 90px
+    margin: 16px
+    margin-bottom: 0
+  &__link
+    display: block
+    width: fit-content
+    line-height: 20px
+    font-size: 18px
+    padding: 8px
+    margin: 0 16px
+    text-decoration: none
+    // text-transform: uppercase
+    color: $citylights
+    &:active
+      color: $citylights
+    &:hover
+      color: $lightgreenshblue
+.invisible
+  position: fixed
+  top: -100%
+  animation: fade-out 2s
+.table
+  border: none
+  border-radius: 5px
+  border-collapse: collapse
+  width: 100%
+  max-width: 100%
+  &__header
+    padding: 8px 16px
+    line-height: 20px
+    font-size: 18px
+    vertical-align: top
+    border-bottom: 1px solid #0984e3
+  &__cell
+    padding: 16px
+    height: 20px
+    line-height: 20px
+    font-size: 18px
+    text-align: center
+    vertical-align: middle
+    border-bottom: 1px solid #ffffff
+    cursor: default
+    .fas
+      margin: 0 8px
+    &--list
+      display: flex
+      flex-wrap: wrap
+      padding: 16px
+      line-height: 20px
+      font-size: 18px
+      text-align: center
+      vertical-align: middle
+      border-bottom: 1px solid #ffffff
+    &--header
+      display: none
+      position: absolute
+      top: 16px
+      left: 0
+      padding: 0px 16px
+.editable
+  cursor: pointer
+.popup
+  background: $draculaorchid
+  color: $citylights
+  margin: 24px auto
+  padding: 24px
+  border-radius: 16px
+.form
+  display: flex
+  position: relative
+  flex-direction: column
+  padding: 16px
+  color: $citylights
+  &__close
+    position: absolute
+    top: 8px
+    right: 16px
+    cursor: pointer
+    display: none
+  &__checkbox
+    margin: 16px
+    margin-left: 0
+  &__placeholder
+    font-size: 16px
+    position: absolute
+    top: 33px
+    left: 10px
+    transition: all .2s
+  &__input
+    &--text
+      font-size: 16px
+      padding-bottom: 4px
+      outline: none
+      border: none
+      background: inherit
+      width: 100%
+      color: $citylights
+      box-shadow: 0 1px 0 $soothingbreezr
+      &:focus
+        box-shadow: 0px 2px 0px $electronblue !important
+        + .form__placeholder
+          top: 8px
+          font-size: 12px
+          opacity: .4
+      &:not(:placeholder-shown)
+        + .form__placeholder
+          top: 8px
+          font-size: 12px
+          opacity: .4
+  &__label
+    &--text
+      margin-top: -10px
+      margin-bottom: 10px
+      margin-left: -10px
+      display: inline-block
+      padding: 30px 10px 10px
+      border-radius: 10px
+      position: relative
+      max-width: 320px
+      &:hover
+        background: none
+  &__del
+    width: fit-content
+    border-radius: 8px
+    border: none
+    line-height: 20px
+    padding: 8px 16px
+    margin: 16px 0
+    cursor: pointer
+    background: $chigong
+    color: $citylights
+  &__submit
+    width: fit-content
+    border-radius: 8px
+    border: none
+    line-height: 20px
+    padding: 8px 16px
+    margin: 16px 0
+    cursor: pointer
+    background: $electronblue
+    color: $citylights
+    &:hover
+      background: $greendarnertail
+.errlist
+  color: $chigong
+  border-radius: 8px
+  background: $draculaorchid
+  li
+    padding: 8px
+    list-style: none
