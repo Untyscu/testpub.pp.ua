@@ -1,0 +1,5 @@
+172.20.0.1 - - [28/Dec/2023:11:12:10 +0000] "GET / HTTP/1.1" 200 723 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+172.20.0.1 - - [28/Dec/2023:11:12:10 +0000] "GET /css/main.css HTTP/1.1" 200 1421 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+172.20.0.1 - - [28/Dec/2023:11:12:10 +0000] "GET /js/main-min.js HTTP/1.1" 200 2159 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+172.20.0.1 - - [28/Dec/2023:11:12:10 +0000] "GET /img/bg.jpg HTTP/1.1" 200 325342 "http://localhost/css/main.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+172.20.0.1 - - [28/Dec/2023:11:12:10 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
